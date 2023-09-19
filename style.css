@@ -1,0 +1,160 @@
+/* reset */
+body{
+    margin: 0;
+    color: white;
+    font-weight: bold;
+}
+
+fieldset{
+    border: none;
+    margin: 0 ;
+    padding: 0;
+    font-weight: inherit;
+}
+
+h1, label{
+    font-weight: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    margin: 0;
+}
+
+button{
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    color: inherit;
+    font-weight: inherit;
+}
+
+input{
+    border: none;
+    color: inherit;
+    padding: 0;
+    font-weight: inherit;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* 스타일적용 */
+
+body{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    background: var(--gradient2, radial-gradient(293.21% 130.49% at 3.59% 5.28%, #F0F4FF 0%, #A5B6EE 100%));
+}
+
+article{
+    box-sizing: border-box;
+    width: 400px;
+    height: 360px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 44px;
+
+    border-radius: 16px;
+    background: var(--gradient, linear-gradient(144deg, #5572BB 2.13%, #374B7C 102.97%));
+    box-shadow: 20px 20px 60px 10px rgba(55, 75, 124, 0.40);
+}
+
+
+article h1{
+    width: 100%;
+    font-size: 24px;
+    text-align: center;
+    padding: 4px 0 23px;
+    position: relative;
+    
+}
+
+article h1::after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #3D538A;
+
+    position:absolute;
+    left: 0;
+    bottom: 0;
+}
+
+
+form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+
+form .input-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+form .input-box>img{
+    padding-top: 20px;
+}
+
+
+form fieldset{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    position: relative;
+}
+
+form label{
+    color: #A5B6EE;
+    text-align: center;
+    margin-bottom: 4px;
+
+}
+
+form input{
+    width: 80px;
+    height: 80px;
+    background: url(./img/inputImg.svg) no-repeat;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.btn-wrapper{
+    width: 100%;
+    text-align: center;
+}
+
+.btn-wrapper button{
+    width: 112px;
+    height: 48px;
+    border-radius: 50px;
+}
+
+.btn-wrapper img {
+    vertical-align: bottom;
+}
+
+button.start{
+    background-color: #5180FF;
+    margin-right: 12px;
+}
+
+
+button.reset{
+    background-color: #FB7099;
+}
+
